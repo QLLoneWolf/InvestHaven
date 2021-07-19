@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Montserrat;
+    box-sizing: border-box;
+    transition: all ease 0.3s;
+}
+
+html{
+    scroll-behavior: smooth;
+
+  }
+
+body{
+  background-color: #0f0f0fff;
+}
+
+.container-user{
+
+    text-align:center;
+    position:fixed;
+    z-index:999;
+    top:0;
+    width: 100%;
+    color:#F0F5F9;
+    transition: 0.4s ease;
+}
+
+.sticky{
+  background-color: #0f0f0fff;
+  color:#F0F5F9;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 3%;
+    width:80%;
+    margin:0 auto;
+  }
+
+nav ul {
+    position:inherit;
+    background: none;
+    width:auto;
+    height:auto;
+    display:flex;
+    padding-top:0;
+    margin-bottom:0;
+}
+
+nav ul a li{
+    display:block;
+    width:100%;
+    padding: 1vh 1.4vh;
+}
+
+li, a{
+    font-weight: 500;
+    font-size: 0.85em;
+    text-decoration: none;
+    color:inherit;
+    font-weight: 600;
+}
+nav ul a{
+    float:left;
+    margin: 1% 1.4%;
+}
+
+nav ul a li:hover{
+    background-color: #758d44;
+    color:black;
+    transition: 0.4s ease-in-out;
+    border-radius:25px;
+}
+
+
+.logo{
+  cursor: pointer;
+  margin-right: auto;
+  width:5%;
+  height:5%;
+
+}
+
+.container-head{
+  background-image: url("forest-road.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  height:93vh
+}
+
+.topic {
+  padding-top:12.5%;
+  padding-left: 12.5%;
+  text-align:left;
+  width:60%;
+}
+
+.topic h1{
+  padding-top:10%;
+  font-size: 3rem;
+  color:#F0F5F9;
+  font-weight: 600;
+}
+
+.topic p{
+  padding-top:2%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: left;
+  color:#F0F5F9;
+  line-height: 1.5;
+}
+
+.features{
+  background-color: #0f0f0f;
+  padding: 8vh 8vw;
+  display:flex;
+  justify-content:space-around;
+  width:100%;
+  height:40%;
+}
+.card-body{
+
+  color:#0f0f0f;
+  border-radius: 10px;
+}
+
+
+
+.card-body p{
+  font-size: 0.7em;
+  color:#323232;
+  text-align: left;
+  /* overflow: hidden;
+  display:none; */
+}
+.card{
+  transition: width ease 0.3s;
+  border-radius: 10px;
+  display:inline-block;
+  background-color: #B8C6A7;
+
+}
+
+.card img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+
+}
+
+/* .card:hover p{
+  display:inline;
+  transition: 0.3s ease;
+} */
+
+.card:after{
+  content:"";
+  width:0;
+  height:1vh;
+  background-color: #758d44;
+  position:absolute;
+  bottom:0;
+  left:0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+}
+
+.card:hover::after{
+  content:"";
+  width:100.5%;
+  height:1vh;
+  background-color: #758d44;
+  position:absolute;
+  bottom:-1px;
+  left:-1px;
+  transition: width ease 0.5s;
+}
+
+.wwrd{
+  background-image: url("office.jpg");
+  background-size: cover;
+  background-color: rgba(15,15,15,0.6);
+  background-blend-mode: darken;
+  opacity:1;
+  padding:5%;
+  text-align:center;
+  color:#f0f5f9;
+  font-weight: 600;
+}
+
+.wwrd h2{
+  font-weight: 600;
+  color:#f0f5f9;
+  padding-bottom:3%;
+
+}
+
+.sustain-file{
+  background-color:#0f0f0f;
+  display:flex;
+
+  /* height:20vh; */
+}
+
+.sustainable-img{
+  width:50%;
+  height:100%;
+  display:inline-block;
+  align-self: center;
+  color:#0f0f0f;
+  /* background-image:url("images/sustainability-2.jpg"); */
+}
+.sustainable-img a{
+  color:#0f0f0fff;
+}
+
+.sustainable-img :hover{
+  letter-spacing: 2px;
+  transition: all ease 0.3s;
+}
+
+.sustainable-img img{
+  width:100%;
+  margin:auto;
+  /* background-image:url("images/sustainability-2.jpg"); */
+}
+
+.sustainable-txt{
+  width:50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  color:#f5f0f9;
+}
+
+.sustainable-txt h2{
+  font-weight:600;
+  font-size: calc(1.5vh + 1.5vw);
+
+}
+.sustainable-txt p{
+  padding:2%;
+  font-size:calc(0.7vh + 0.7vw);
+
+}
+.btn-infom{
+  padding:1% 3%;
+  font-size: calc(0.8vh + 0.8vw);
+  background-color: #758d44;
+  border:1px;
+  border-radius: 2vw;
+  font-weight:500;
+}
+
+.btn-infom:hover{
+  background-color:#455d14;
+  color:#f5f0f9;
+  transition: all ease 0.3s;
+}
+
+.newsletter{
+  background-color:#f0f5f9;
+
+  width:100%;
+}
+
+.form-signin {
+
+  max-width: 50%;
+  padding: 5%;;
+  margin: auto;
+  text-align: center;
+  background-color:#f0f5f9;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+.form-control{
+  border-radius:0;
+}
+
+.top {
+  margin-bottom: -1px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.middle{
+
+}
+
+.bottom {
+  margin-bottom: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+.input-form{
+  padding:2vh 0;
+}
+.form-signin button{
+  width:50%;
+  background-color:#758d44;
+  color:#f0f5f9;
+}
+
+  .form-signin button:hover{
+    background-color:#0f0f0f;
+    transition: all ease 0.3s;
+  }
+
+.footer{
+  background-color: #758d44;
+}
+
+.footer-basic {
+  padding:40px 0;
+  background-color:#0f0f0f;
+  color:#f0f5f9;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+  color:#f0f5f9;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:1;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:1;
+}
+.footer-img{
+  width:50%;
+}
+
+.footer-basic .social > a:hover {
+  opacity:1;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+ul.footer-links {
+    margin:0 auto;
+}
+
+ul.footer-links li {
+    display:inline-block;
+    font-size:.8em;
+    color:#f0f5f9;
+    padding: 1em 2em;
+}
+/* #11999E #0f0f0f #323232 #F0F5F9 */
