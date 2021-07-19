@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>InvestHaven</title>
+    <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="vision.css">
+  </head>
+  <body>
+    <div class="container-head" id="home">
+    <div class="container-user" id="navbar">
+			<header>
+        <img src="logo.png" class="logo" alt="logo">
+
+				<nav>
+					<ul id="nav">
+						<a href="../investHaven/index.html"><li>Home</li></a>
+						<a href="service.html"><li>Services</li></a>
+            <a href="functionailty.html"><li>Technology</li></a>
+            <a href="business.html"><li>Business</li></a>
+						<a href="creator.html"><li>About</li></a>
+					</ul>
+				</nav>
+			</header>
+		</div>
+    <div class="topic fade-in">
+      <h1><span>Invest</span>Haven</h1>
+      <p>Helping thousands live a better life<br>By making sure they make the right investments</p>
+    </div>
+    	<a href="#file"><img src="arrow.png" alt="scroll hint" class="scroll"></a>
+    </div>
+
+    <div class="file" id="file">
+      <h1>Our Vision</h1>
+      <h6>We strive to create the best customer experience possible.</h6>
+
+      <div class="visionary-card">
+        <div class="card" style="width: 100%; margin-top:4%; background-color:#fafafa;">
+          <img src="consumer.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+
+            <p class="card-text"><span class="quotes">"</span>We strive to serve the customer just like they need. We aim to be the best at the customer experience we provide, using the internet and the technology we have developed and continue to, to help them find the right investments for them. All this while helping those that are not directly our consumers, the world by helping in making green investment and SRI mainstream for others.<span class="quotes">"</span></p>
+          </div>
+        </div>
+      </div>
+
+    <h5>Helping you live a better life.</h5>
+    <p>Our vision at InvestHaven is simple, we aim to be the most customer-centric and satisfactory service in our fields. We hope to achieve this level of experience using the numerous AI technologies we have developed but more importantly by giving our customers the necessary information about the ecological and carbon impact of their investments. This helps satisfy the ever-growing responsibility towards sustainability and conservation of resources.</p>
+    <p>No matter what you are investing for, quick and huge profits or quaterly dividend payouts for your retirement because we all deserve some rest, we have all the necessary portfolios for you to choose from or get inspired by.</p>
+    <p>But we all know inspiration just isn't enough. Information and staying up to date is very important as well but so is time. So you can't just spend your day on gathering information. But, no need to worry, we have our customers covered here as well with our NLP Models to quickly sift through key notes, speeches, financial data and more.</p>
+    <p>With this comprehensive system and direct contact for each consumer with no time constraints to help resolve their problems, we aim to achieve our vision.</p>
+    <a href="service.html"><button type="button" class="btn-infom" >Learn More about our Services</button></a>
+    </div>
+
+    <div class="sustain-file">
+      <div class="sustainable-txt">
+        <h2>Vision beyond our Customers</h2>
+        <p>Other than our goal to provide our consumers a extensive experience, we have an aim which includes other potential costumers, which in our opinion is the whole of humanity. And so it's our goal is to show we care about them too. By providing our customers with sustainble investments and information about their investments impact, we help in making Socially Responsible Investing mainstream and help reduce negative environmental impact. </p>
+      </div>
+      <div class="sustainable-img">
+        <div id="carousel" class="carousel slide" data-mdb-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="sustainability-2.jpg" class="" alt="..."/>
+            </div>
+            <div class="carousel-item">
+              <img src="sustainability-5.jpg" class="" alt="..."/>
+            </div>
+            <div class="carousel-item">
+              <img src="sustainability-4.jpg" class="" alt="..."/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-basic">
+        <footer>
+            <!-- <div class="social"><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png" class="footer-img"/></a></a><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png" class="footer-img"/></a><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" class="footer-img"/></a></div> -->
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="../investHaven/index.html">Home</a></li>
+              <li class="list-inline-item"><a href="service.html">Services</a></li>
+              <li class="list-inline-item"><a href="functionality.html">Technology</a></li>
+              <li class="list-inline-item"><a href="vision.html">Vision</a></li>
+              <li class="list-inline-item"><a href="business.html">Business</a></li>
+              <li class="list-inline-item"><a href="creator.html">About</a></li>
+            </ul>
+            <p class="copyright">InvestHaven © 2018</p>
+        </footer>
+    </div>
+    </div>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var card = $(".card");
+
+        $(window).scroll(function() {
+
+            var height = $('#navbar').height();
+            var scrollTop = $(window).scrollTop();
+
+            if (scrollTop >= height) {
+                $('#navbar').addClass('sticky');
+            } else {
+                $('#navbar').removeClass('sticky');
+            }
+
+        });
+        var counter =1;
+        setInterval(function(){
+          $(".carousel-item:nth-child("+ (counter-1) +")").removeClass("active");
+          if (counter>3){
+            counter=1;
+          }
+          $(".carousel-item:nth-child("+counter+")").addClass("active");
+          counter++;
+        }, 3000);
+      });
+    </script>
+  </body>
+</html>
