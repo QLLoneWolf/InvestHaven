@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:Montserrat;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+/*nav bar*/
+.container-user{
+
+  text-align:center;
+  position:fixed;
+  z-index:999;
+  top:0;
+  width: 100%;
+  color:#F0F5F9;
+  transition: 0.4s ease;
+}
+
+.sticky{
+background-color: #0f0f0fff;
+/* background-color: #0f0f0fbb; */
+color:#F0F5F9;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 3%;
+  width:80%;
+  margin:0 auto;
+}
+
+nav ul {
+  position:inherit;
+  background: none;
+  width:auto;
+  height:auto;
+  display:flex;
+  padding-top:0;
+  margin-bottom:0;
+}
+
+nav ul a li{
+  display:block;
+  width:100%;
+  padding: 1vh 1.4vh;
+}
+
+li, a{
+  font-weight: 500;
+  font-size: 0.85em;
+  text-decoration: none;
+  color:inherit;
+  font-weight: 600;
+}
+nav ul a{
+  float:left;
+  margin: 1% 1.4%;
+}
+
+nav ul a li:hover{
+  background-color: #758d44;
+  color:black;
+  transition: 0.4s ease-in-out;
+  border-radius:25px;
+}
+
+
+.logo{
+cursor: pointer;
+margin-right: auto;
+width:5%;
+height:5%;
+
+}
+/*nav end*/
+
+body{
+    margin: 0;
+    padding: 0%;
+}
+
+p, blockquote {
+    font-size: 01em;
+    font-family: "Montserrat";
+    font-weight:400;
+    line-height: 1.6em;
+}
+
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+a{
+    text-decoration: none;
+    padding-right: 3px;
+}
+.start{
+  height:50vh;
+  background-color: #450159;
+  color:#f0f9f5;
+  padding-top:3vh;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+}
+.data{
+
+    display: flex;
+    justify-content: space-around;
+    background-color: #c0c0c0;
+    font-size: calc(1vw + 1vh);
+    padding: 10% 4%;
+
+}
+
+.data img{
+  width:10vw;
+
+}
+
+.data div{
+  text-align: center;
+  width: 20vw;
+  display:flex;
+  justify-content: space-between;
+  flex-direction:column;
+  text-align:center;
+}
+
+.data div img {
+  margin: 0 auto;
+}
+.data div div{
+  display:flex;
+  justify-content: space-between;
+  flex-direction:column;
+  text-align:center;
+}
+
+.container {
+  text-align: center;
+  padding: 1vw;
+  margin:7.5vw auto;
+  max-width:30vw;
+  font-size: 2.5vw;
+  background-color: #D4D4D4;
+}
+
+.container h1,
+.demo,
+.demo-item {
+  display: block;
+  font-weight: 400;
+  font-size: 2.5vw ;
+}
+
+.container h1 {
+  height: 10vw;
+  padding-top: 0;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #281E5D;
+  font-size: 2.5vw;
+}
+.demo,
+.demo-item {
+  height: 8vw;
+  font-size: 2.5vw ;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.demo {
+  font-family: "Montserrat";
+  overflow: hidden;
+  background-color: #333;
+  color: #fff;
+  font-size: 2.5vw;
+
+}
+
+.demo-item {
+
+
+  padding-top: .65vw;
+  animation: animatetotop 5s steps(3) infinite;
+  font-size: 2.5vw ;
+}
+
+.demo-item_inner,
+.demo-item-overlay {
+  display: inline-block;
+  font-size: 2.5vw ;
+}
+
+.demo-item_inner {
+  position: relative;
+  line-height: 1;
+  font-size: 2.5vw  ;
+}
+
+.demo-item_inner:after {
+  content: "";
+  position: absolute;
+  top:-1px;right:0;bottom:-2px;left:0;
+  border-left: 1px solid #fff;
+  background-color: #333;
+  animation: animatetoright 0.7s steps(10) infinite alternate;
+  font-size: 2.5vw ;
+}
+
+@keyframes animatetoright {
+  0% {
+    left: 0;
+    margin-right: auto;
+  }
+  100% {
+    left: 100%;
+    margin-left: .6em;
+    margin-right: -.6em;
+  }
+}
+
+@keyframes animatetotop {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -240px;
+  }
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto ;
+    padding: 40px 0px;
+
+ }
+
+
+p.sectionTag{
+    color: black;
+    padding: 16px 0px;
+
+}
+.paras{
+    padding:0  45px;
+    font-size: calc(0.7vw + 0.7vh);
+    max-width: 60%;
+}
+.section-left{
+    flex-direction: row-reverse  ;
+}
+.thumbnail{
+    max-width: 30%;
+}
+.thumbnail img{
+    width:100%;
+    border:3px solid black;
+    border-radius: 13px;
+    margin-top: 19px;
+    margin: 10%;
+}
+
+
+
+
+.app{
+  display: flex;
+
+  justify-content: space-around;
+  background-color:  #DDDDDD;
+  padding:5vw 0;
+
+}
+.app-ui{
+  width:20vw;
+  height:40vw;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:auto 0;
+  margin-left: 5vw;
+}
+
+.information{
+  padding-left:4vw;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.information h1{
+  margin-bottom:5vw;
+}
+.perks{
+  margin-bottom:5vw;
+}
+.perks p{
+  margin-top:3%;
+  padding:5px;
+  font-size: calc(0.6vw + 0.6vh);
+}
+.perks img{
+  width:10%;
+}
+.perks{
+  display: flex;
+}
+
+.information h1{
+  font-size: calc(2vw + 2vh);
+}
+
+
+.footer{
+  background-color: #758d44;
+  position:relative;
+}
+
+.footer-basic {
+  padding:40px 0;
+  background-color:#777;
+  color:#0f0f0f;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:1;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+
+
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+ul.footer-links {
+    margin:0 auto;
+}
+
+ul.footer-links li {
+    display:inline-block;
+    font-size:.8em;
+    color:#0f0f0f;
+    padding: 1em 2em;
+}
+.btn-infom{
+  margin-top: 1%;
+  padding:1% 3%;
+  font-size: calc(0.6vh + 0.6vw);
+  background-color: #111;
+  color: white;
+  border:1px;
+  border-radius: 20px;
+  font-weight:500;
+}
+
+.btn-infom:hover{
+  background-color:#455d14;
+  color:#f0f5f9;
+  transition: all ease 0.3s;
+}
+#big-man{
+  font-size: calc(1vw + 1vh);
+  font-weight: 600;
+}
